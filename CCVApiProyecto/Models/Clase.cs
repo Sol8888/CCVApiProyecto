@@ -8,7 +8,7 @@
         public Materia Materia { get; set; }
         public int ProfesorId { get; set; }
         public User Profesor { get; set; }
-        public ICollection<User> Estudiantes { get; set; }
+        public ICollection<User> Estudiantes { get; set; } = new List<User>();
         public ICollection<Actividad> Actividades { get; set; }
     }
 }
